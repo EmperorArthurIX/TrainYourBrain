@@ -35,8 +35,7 @@
 <body id = "body" style="opacity: 0.5">
     <div class="container">
         <div class="topic">
-            <p>Insert spin wheel here</p>
-            <button class="spin">Spin!</button>
+            <!-- <button class="random">Randomize!</button> -->
             
             
             <div id="beginbox">
@@ -49,14 +48,17 @@
         <div class="score">
             <h1>Your Score:</h1>
             <h1 id="score"> 0 </h1>
+            <div>
+                <div role="status" id="loading">
+                    <span>Loading...</span>
+                </div>
+            </div>
         </div>
         
         
         <div class="question" id="quizbox">
             
         </div>
-    
-    
     </div>
     <script type="text/javascript" src="index.js"></script>
 </body>
