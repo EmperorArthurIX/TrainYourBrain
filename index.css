@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-family: "Comfortaa", cursive;
+}
+button,
+input {
+  border: none;
+  border-radius: 20px;
+  min-height: 40px;
+  margin: 5%;
+  padding: auto;
+  font-family: "Comfortaa", cursive;
+}
+button {
+  background-image: linear-gradient(45deg,
+    #314755 0%,
+    #26a0da 51%,
+    #314755 100%
+  );
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 5px #eee;
+}
+button:hover {
+  background-position: right center;
+  color: #fff;
+}
+
+div,
+p {
+  text-align: center;
+}
+.container {
+  display: grid;
+  grid-template-columns: 20% auto 20%;
+  height: 100vh;
+  width: 100%;
+  background-color: #7f5a83;
+  background-image: linear-gradient(to top, transparent, #0d324d),
+    linear-gradient(to right, #7f5a83 0%, #0d324d 74%, #7f5a83 95%);
+  text-align: center;
+  background-size: 100% 200%, 2000% 100%;
+
+  animation: move 9s infinite;
+}
+@keyframes move {
+  from {
+    background-position: center center, left center;
+  }
+  to {
+    background-position: center center, right center;
+  }
+}
+
+.score,
+.question,
+.topic {
+  grid-column: 2;
+  padding: auto;
+  margin: auto;
+}
+.answer {
+  border: none;
+  background: none;
+  border-radius: 20px;
+  text-align: center;
+  overflow: visible;
+  font-size: 125%;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}

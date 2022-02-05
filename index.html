@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Your Brain</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+
+    
+    <!-- FADE IN THE PAGE -->
+    <script type="text/javascript">
+        var opacity = 0.5;
+        var intervalID = 0;
+        window.onload = fadeBody;
+  
+        function fadeBody() {
+            setInterval(showBody, 20);
+        }
+  
+        function showBody() {
+            var body = document.getElementById("body");
+            opacity = Number(window.getComputedStyle(body)
+                             .getPropertyValue("opacity"));
+            if (opacity < 1) {
+                opacity = opacity + 0.01;
+                body.style.opacity = opacity
+            } else {
+                clearInterval(intervalID);
+            }
+        }
+    </script>
+</head>
+
+<body id = "body" style="opacity: 0.5">
+    <div class="container">
+        <div class="topic">
+            <p>Insert spin wheel here</p>
+            <button class="spin">Spin!</button>
+            
+            
+            <div id="beginbox">
+                <button id="begin">Start!</button>
+            </div>
+            <h3><P id="timer"></P></h3>
+        </div>
+        
+        
+        <div class="score">
+            <h1>Your Score:</h1>
+            <h1 id="score"> 0 </h1>
+        </div>
+        
+        
+        <div class="question" id="quizbox">
+            
+        </div>
+    
+    
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
