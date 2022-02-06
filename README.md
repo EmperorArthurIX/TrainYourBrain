@@ -1,4 +1,4 @@
-# TrainYourBrain
+# [TrainYourBrain](https://emperorarthurix.github.io/TrainYourBrain/)
 A simple, quick game to play with friends or even by yourself! Test your knowledge and typing skills at the same time, and also get bragging rights on beating the game!
 
 
